@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Soft Ride - safe, fast and reliable taxi booking service in Patna, Bihar.">
+<meta name="theme-color" content="#061d2e">
+<title>Soft Ride | Safe • Fast • Reliable</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header" id="home">
+  <div class="container nav">
+    <a href="#home" class="brand"><span class="brand-icon"><i class="fa-solid fa-car-side"></i></span><span><strong>Soft Ride</strong><small>Ride Safe • Ride Easy</small></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#fleet">Fleet</a><a href="#pricing">Pricing</a><a href="#contact">Contact</a>
+      <button class="btn btn-yellow nav-book" data-book>Book a Ride <i class="fa-solid fa-arrow-right"></i></button>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="hero-overlay"></div>
+  <div class="container hero-content">
+    <div class="hero-copy">
+      <div class="eyebrow"><span></span> SAFE • FAST • RELIABLE</div>
+      <h1>Your Ride<br><span>Our Priority</span></h1>
+      <p>Book a taxi in seconds and enjoy a comfortable, safe and affordable ride with Soft Ride.</p>
+      <div class="booking-box">
+        <div class="location-field"><i class="fa-solid fa-location-dot"></i><div><label>Pickup Location</label><input id="pickup" type="text" placeholder="Enter pickup location" autocomplete="street-address"></div></div>
+        <div class="location-field"><i class="fa-solid fa-location-dot"></i><div><label>Drop Location</label><input id="drop" type="text" placeholder="Enter drop location" autocomplete="street-address"></div></div>
+        <button class="btn btn-yellow" id="heroBook">Book Ride <i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+      <div class="hero-trust"><span><i class="fa-solid fa-shield-halved"></i> Verified drivers</span><span><i class="fa-solid fa-clock"></i> 24/7 support</span><span><i class="fa-solid fa-indian-rupee-sign"></i> Transparent fares</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section about" id="about">
+  <div class="container section-grid">
+    <div>
+      <div class="eyebrow dark"><span></span> WHY CHOOSE SOFT RIDE</div>
+      <h2>More Than Just a Ride</h2>
+      <p class="lead">We make your journey easier, safer and more comfortable with professional drivers, clean vehicles and dependable support.</p>
+      <div class="feature-grid">
+        <article class="feature"><div class="feature-icon"><i class="fa-solid fa-shield-halved"></i></div><h3>Safe & Secure</h3><p>Your safety is our priority at every step.</p></article>
+        <article class="feature"><div class="feature-icon"><i class="fa-solid fa-bolt"></i></div><h3>Fast Booking</h3><p>Get a ride in just a few clicks.</p></article>
+        <article class="feature"><div class="feature-icon"><i class="fa-solid fa-tag"></i></div><h3>Affordable Fare</h3><p>Transparent pricing, no hidden charges.</p></article>
+        <article class="feature"><div class="feature-icon"><i class="fa-solid fa-headset"></i></div><h3>24/7 Support</h3><p>We're here whenever you need us.</p></article>
+      </div>
+    </div>
+    <div class="driver-card"><img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=1000&q=85" alt="Professional taxi driver" loading="lazy"><div class="driver-badge"><i class="fa-solid fa-headset"></i> Professional Drivers<br><small>Always on time, always reliable</small></div></div>
+  </div>
+</section>
+
+<section class="section services" id="services">
+  <div class="container">
+    <div class="section-heading"><div><div class="eyebrow light"><span></span> OUR SERVICES</div><h2>Services We Provide</h2><p>From daily commutes to special occasions, we've got you covered.</p></div><div class="script-text">Ride Beyond<br>Boundaries</div></div>
+    <div class="service-grid">
+      <article class="service-card"><div class="service-icon"><i class="fa-solid fa-car"></i></div><h3>City Ride</h3><p>Quick and easy rides within the city.</p></article>
+      <article class="service-card"><div class="service-icon"><i class="fa-solid fa-plane-departure"></i></div><h3>Airport Transfer</h3><p>On-time pickup and drop-off services.</p></article>
+      <article class="service-card"><div class="service-icon"><i class="fa-solid fa-briefcase"></i></div><h3>Corporate Ride</h3><p>Reliable rides for your business needs.</p></article>
+      <article class="service-card"><div class="service-icon"><i class="fa-solid fa-route"></i></div><h3>Outstation</h3><p>Comfortable rides for long journeys.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section fleet" id="fleet">
+  <div class="container">
+    <div class="eyebrow dark"><span></span> OUR FLEET</div><h2>Choose Your Ride</h2><p class="lead">Well-maintained, clean and comfortable vehicles for every journey.</p>
+    <div class="fleet-grid">
+      <article class="fleet-card"><img src="https://images.unsplash.com/photo-1553440569-bcc63803a83d?auto=format&fit=crop&w=900&q=85" alt="Sedan" loading="lazy"><h3>Sedan</h3><p>Economy & Comfort</p><div><strong>From ₹12/km</strong><button class="round-arrow" data-book aria-label="Book Sedan">→</button></div></article>
+      <article class="fleet-card"><img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=900&q=85" alt="SUV" loading="lazy"><h3>SUV</h3><p>More Space, More Comfort</p><div><strong>From ₹18/km</strong><button class="round-arrow" data-book aria-label="Book SUV">→</button></div></article>
+      <article class="fleet-card"><img src="https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=900&q=85" alt="Van" loading="lazy"><h3>Van</h3><p>Group Travel Made Easy</p><div><strong>From ₹25/km</strong><button class="round-arrow" data-book aria-label="Book Van">→</button></div></article>
+      <article class="fleet-card"><img src="https://images.unsplash.com/photo-1504215680853-026ed2a45def?auto=format&fit=crop&w=900&q=85" alt="Luxury car" loading="lazy"><h3>Luxury</h3><p>Premium Ride Experience</p><div><strong>From ₹40/km</strong><button class="round-arrow" data-book aria-label="Book Luxury">→</button></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="how-pricing" id="pricing">
+  <div class="container">
+    <div class="how-box"><div class="eyebrow dark"><span></span> HOW IT WORKS</div><h2>Simple Steps, Easy Ride</h2><p>Booking a taxi with Soft Ride is quick and hassle-free.</p>
+      <div class="steps">
+        <div class="step"><b>1</b><i class="fa-solid fa-location-dot"></i><h3>Enter Location</h3><p>Set your pickup and drop location.</p></div>
+        <div class="step"><b>2</b><i class="fa-solid fa-car"></i><h3>Choose Ride</h3><p>Select your preferred vehicle.</p></div>
+        <div class="step"><b>3</b><i class="fa-solid fa-wallet"></i><h3>Confirm & Pay</h3><p>Pay securely with multiple options.</p></div>
+        <div class="step"><b>4</b><i class="fa-solid fa-user"></i><h3>Enjoy Ride</h3><p>Your driver arrives and you're set.</p></div>
+      </div>
+    </div>
+    <div class="pricing-box"><div class="eyebrow dark"><span></span> OUR PRICING</div><h2>Our Pricing</h2><p class="lead">No hidden fees. Just simple, clear and affordable fares.</p>
+      <div class="price-grid">
+        <article class="price-card"><h3>Economy</h3><strong>₹12<small>/km</small></strong><ul><li>Comfortable Rides</li><li>AC On Board</li><li>Free WiFi Support</li></ul><button class="btn btn-yellow" data-book>Book Now</button></article>
+        <article class="price-card popular"><span class="popular-label">Most Popular</span><h3>Premium</h3><strong>₹18<small>/km</small></strong><ul><li>Leather Seats</li><li>AC On Board</li><li>Priority Support</li></ul><button class="btn btn-yellow" data-book>Book Now</button></article>
+        <article class="price-card"><h3>Business</h3><strong>₹25<small>/km</small></strong><ul><li>Luxury Comfort</li><li>AC On Board</li><li>Dedicated Support</li></ul><button class="btn btn-yellow" data-book>Book Now</button></article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="reviews"><div class="container"><div class="eyebrow light"><span></span> CLIENT REVIEWS</div><h2>What Our Clients Say</h2><p>Real people, real experiences.</p><div class="review-wrap"><button class="slider-btn" id="prevReview" aria-label="Previous review">‹</button><div class="review-card" id="reviewCard"></div><button class="slider-btn" id="nextReview" aria-label="Next review">›</button></div></div></section>
+
+<section class="contact-section" id="contact">
+  <div class="container contact-grid">
+    <div><div class="eyebrow dark"><span></span> CONTACT US</div><h2>Need a Ride or Have a Question?</h2><p class="lead">Send us your details. Our team will contact you shortly.</p>
+      <div class="contact-points"><div><i class="fa-solid fa-phone"></i><span><b>Call Us</b><a href="tel:+919876543210">+91 98765 43210</a></span></div><div><i class="fa-solid fa-envelope"></i><span><b>Email</b><a href="mailto:info@softride.com">info@softride.com</a></span></div><div><i class="fa-solid fa-location-dot"></i><span><b>Location</b>Patna, Bihar, India</span></div></div>
+    </div>
+    <form class="contact-form" id="contactForm"><h3>Send Enquiry</h3><label>Name<input name="name" required maxlength="100" placeholder="Your name"></label><label>Phone<input name="phone" required maxlength="20" placeholder="+91 XXXXX XXXXX"></label><label>Email<input name="email" type="email" maxlength="150" placeholder="you@example.com"></label><label>Message<textarea name="message" required maxlength="1000" rows="4" placeholder="How can we help?"></textarea></label><button class="btn btn-yellow full" type="submit">Send Enquiry <i class="fa-solid fa-paper-plane"></i></button><div class="form-status" id="contactStatus" role="status"></div></form>
+  </div>
+</section>
+
+<section class="final-cta"><div class="container"><div class="cta-content"><div><div class="eyebrow light"><span></span> READY TO RIDE?</div><h2>Book Your Ride Today</h2><p>Fast, easy, reliable.</p></div><button class="btn btn-yellow" data-book>Book Now <i class="fa-solid fa-arrow-right"></i></button></div></div></section>
+</main>
+
+<footer><div class="container footer-grid"><div class="footer-brand"><a href="#home" class="brand"><span class="brand-icon"><i class="fa-solid fa-car-side"></i></span><span><strong>Soft Ride</strong><small>Ride Safe • Ride Easy</small></span></a><p>Safe Rides. Better Tomorrow.</p></div><div><h3>Quick Links</h3><a href="#home">Home</a><a href="#about">About Us</a><a href="#services">Services</a><a href="#fleet">Fleet</a><a href="#pricing">Pricing</a><a href="#contact">Contact</a></div><div><h3>Our Services</h3><a href="#services">City Ride</a><a href="#services">Airport Transfer</a><a href="#services">Corporate Ride</a><a href="#services">Outstation</a></div><div><h3>Contact Us</h3><p><i class="fa-solid fa-phone"></i> +91 98765 43210</p><p><i class="fa-solid fa-envelope"></i> info@softride.com</p><p><i class="fa-solid fa-location-dot"></i> Patna, Bihar, India</p><div class="socials"><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a><a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a><a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a><a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></div></div></div><div class="container copyright"><span>© 2026 Soft Ride. All rights reserved.</span><span>Privacy Policy &nbsp; | &nbsp; Terms & Conditions</span></div></footer>
+
+<div class="modal" id="bookingModal" aria-hidden="true"><div class="modal-card"><button class="modal-close" id="modalClose" aria-label="Close">×</button><div class="eyebrow dark"><span></span> BOOK YOUR RIDE</div><h2>Let's get you moving.</h2><p>Enter your details and we'll confirm your ride.</p>
+<form id="bookingForm">
+<div class="form-row"><label>Full Name<input name="name" required maxlength="100" type="text" placeholder="Your name" autocomplete="name"></label><label>Phone<input name="phone" required maxlength="20" type="tel" placeholder="+91 XXXXX XXXXX" autocomplete="tel"></label></div>
+<div class="form-row"><label>Pickup<input required name="pickup" id="modalPickup" maxlength="255" type="text" placeholder="Pickup location"></label><label>Drop<input required name="drop" id="modalDrop" maxlength="255" type="text" placeholder="Drop location"></label></div>
+<div class="form-row"><label>Date<input required name="ride_date" type="date" id="rideDate"></label><label>Ride Type<select required name="ride_type"><option value="">Select ride</option><option>Economy</option><option>Premium</option><option>Business</option><option>SUV</option><option>Luxury</option></select></label></div>
+<button class="btn btn-yellow full" type="submit">Confirm Booking <i class="fa-solid fa-arrow-right"></i></button>
+</form><div class="success-message" id="successMessage" role="status"></div></div></div>
+<div class="toast" id="toast" role="status"></div>
+<script src="script.js"></script>
+</body>
+</html>
